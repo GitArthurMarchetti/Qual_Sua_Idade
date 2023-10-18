@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <header>
+    <h1>Qual seu nome, idade e genêro?</h1>
+    </header>
+
+    <section class="hud">
+        <div>
+            <p class="espacoNome">
+                Seu nome:
+                <input type="text" placeholder="Ex: Carlos" name="nome" id="nome">
+            </p>
+            <p class="espacoIdade">
+                Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0" placeholder="Ex: 2015">
+            </p>
+            <p class="espacoSexo">
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <button onclick="vereficar()">Vereficar</button>
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; ArthurMarchetti</p>
+    </footer>
+</body>
+</html>
